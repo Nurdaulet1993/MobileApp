@@ -1,0 +1,109 @@
+.section-main{
+    height: 100vh;
+    background-image: url(../../img/main_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section-main__container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+.section-main__content p{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 387px;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 35px 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    width: 160px;
+}
+.btn-orange{
+    background-color: #fc6a42;
+}
+.btn-blue{
+    background-color: #4466c9;
+}
+.section-main__btn-group{
+    margin-top: 50px;
+}
+.section-main__btn-group .btn{
+    margin-right: 15px;
+}
+.btn:hover{
+    transform: translate(0, -7px);
+}
+.section-main__arrow{
+    width: 49px;
+    height: 49px;
+    background-color: #ffffff;
+    
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    animation-name: arrowMove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.section-main__arrow a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* ANIMATION ARROW */
+@keyframes arrowMove {
+    0%   {transform: translate(-50%, 0)}
+    50%  {transform: translate(-50%, 40px)}
+    100% {transform: translate(-50%, 0)}
+}
+
+@media screen and (max-width: 930px) {
+   .section-main__phone{
+       display: none;
+   }
+   .section-main__content{
+       text-align: center;
+   }
+   .section-main__content p {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 536px){
+    h1{
+        font-size: 42px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+    .section-main__btn-group{
+        margin-top: 24px;
+    }
+}

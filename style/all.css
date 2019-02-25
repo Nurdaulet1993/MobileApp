@@ -1,0 +1,12 @@
+@import url('vendor/fonts.css');
+@import url('vendor/reset.css');
+@import url('vendor/animation.css');
+@import url('components/section-header.css');
+@import url('components/section-main.css');
+@import url('components/section-features.css');
+@import url('components/section-widgets.css');
+@import url('components/section-screenshots.css');
+@import url('components/section-comments.css');
+@import url('components/section-download.css');
+@import url('components/footer.css');
+
