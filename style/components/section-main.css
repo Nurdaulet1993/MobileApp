@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    padding-top: 100px;
 }
 .section-main__container{
     display: flex;
@@ -71,7 +72,9 @@ h1{
     width: 100%;
     height: 100%;
 }
-
+.section-main__phone{
+    padding-top: 10px;
+}
 /* ANIMATION ARROW */
 @keyframes arrowMove {
     0%   {transform: translate(-50%, 0)}
@@ -95,6 +98,10 @@ h1{
     h1{
         font-size: 42px;
         margin-bottom: 16px;
+    }
+
+    .section-main__content{
+        margin-top: -100px;
     }
 }
 
